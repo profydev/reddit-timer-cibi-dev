@@ -23,3 +23,20 @@ export const StyledNavLink = styled(Link)`
   text-decoration: none;
   margin-left: 25px;
 `;
+
+export const StyledFooter = styled.footer`
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: Montserrat;
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+`;

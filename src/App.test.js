@@ -1,7 +1,7 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 // import userEvent from '@testing-library/user-event';
-import { MemoryRouter } from 'react-router-dom';
+// import { MemoryRouter } from 'react-router-dom';
 // import fetchMock from 'jest-fetch-mock';
 // import mockResponse from './__mocks__/subreddit-reactjs-response.json';
 import App from './App';
@@ -12,29 +12,24 @@ test('renders App', () => {
   render(<App />);
 });
 
-function setup() {
-  return render(
-    <MemoryRouter>
-      <App />
-    </MemoryRouter>,
-  );
-}
+// function setup() {
+//   return render(
+//     <MemoryRouter>
+//       <App />
+//     </MemoryRouter>,
+//   );
+// }
 
-describe('Header', () => {
-  // test('"How it works" link points to the correct page', () => {
-  //   setup();
-  //   const link = screen.getByRole('link', { name: /how it works/i });
-  //   userEvent.click(link);
-  //   expect(
-  //     screen.getByRole('heading', { name: /how it works/i }),
-  //   ).toBeInTheDocument();
-  // });
-  test('Logo Checks', () => {
-    setup();
-    const logo = screen.getByRole('img', { name: /logo/i });
-    screen.debug(logo);
-  });
-});
+// describe('Header', () => {
+// test('"How it works" link points to the correct page', () => {
+//   setup();
+//   const link = screen.getByRole('link', { name: /how it works/i });
+//   userEvent.click(link);
+//   expect(
+//     screen.getByRole('heading', { name: /how it works/i }),
+//   ).toBeInTheDocument();
+// });
+// });
 
 // test('loads posts and renders them on the page', async () => {
 //   setup();
