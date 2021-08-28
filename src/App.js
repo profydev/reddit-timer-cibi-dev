@@ -15,7 +15,7 @@ function App() {
       <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/search" component={SearchPage} />
+        <Route path="/search" component={SearchPage} />
       </Switch>
     </BrowserRouter>
   );
