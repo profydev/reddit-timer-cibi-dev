@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
+import Header from './components/Header';
 import HomePage from './pages/HomePage/HomePage';
 import SearchPage from './pages/SearchPage/SearchPage';
 import GlobalStyles from './GlobalStyles';
@@ -11,9 +12,10 @@ function App() {
   return (
     <BrowserRouter>
       <GlobalStyles />
+      <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/search" component={SearchPage} />
+        <Route path="/search" component={SearchPage} />
       </Switch>
     </BrowserRouter>
   );
